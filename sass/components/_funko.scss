@@ -1,0 +1,68 @@
+.funko {
+   background-color: white;
+   margin-top: .2em;
+   text-align: left;
+   padding: 2em;
+   font-size: 1.5rem;
+   
+
+   &__cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: space-around;
+      position: relative;
+
+      & article p:first-child {
+         position: absolute;
+         padding: .2em;
+         margin-top: -3em;
+         display: inline-block;
+         background-color: orangered;
+         color: white;
+
+      }
+
+      &__card {
+         width: 9em;
+         cursor: pointer;
+
+         &:hover div:first-child{
+            display: block;
+            position: absolute;
+            right: 0;
+            &:hover {
+               background-color: #117777;
+            }
+         }
+
+         &__addCart { 
+            display: none;           
+            background-color: #18bdbd;
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            font-size: 3.2rem;
+            border-radius: 50%;
+            position: relative;
+            & p {
+               position: absolute;
+               left: 20%;
+               top: -10%;
+            }
+         }
+         &:hover {
+            transition: all 450ms;
+            transform: scale(1.05);
+         }
+         
+
+         &__img-container {
+            width: 9em;
+            & img {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

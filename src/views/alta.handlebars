@@ -1,0 +1,80 @@
+
+
+   <main class="main" id="main">
+      <div class="form-container">
+    <form class="form-container__form" autocomplete="off" method="post" action="/alta">
+        <h2 class="form-container__title">Alta producto</h2>
+        <div class="form-container__separator"></div>
+        <div class="form-container__group">
+            <div class="group-container">
+                <label class="group-container__label" for="id">Id</label>
+                <input class="group-container__input" id="id" name="id">
+            </div>
+            <div class="group-container">
+                <label class="group-container__label" for="nombre">Nombre</label>
+                <input class="group-container__input" id="title" name="nombre" type="text" />
+            </div>
+        </div>
+        <div class="form-container__group">
+            <div class="group-container">
+                <label class="group-container__label" for="marca">Marca</label>
+                <input class="group-container__input" id="brand" name="marca" />
+            </div>
+            <div class="group-container">
+                <label class="group-container__label" for="precio">Precio</label>
+                <input class="group-container__input" id="price" name="precio" type="number" />
+            </div>
+        </div>
+        <div class="form-container__group">
+            
+            <div class="group-container group-stock" >
+                <label class="group-container__label group-stock__label" for="stock">Stock</label>
+                <input class="group-container__input group-stock__input" id="stock" name="stock" type="number" />
+            </div>
+        </div>
+        <div class="form-container__group group-image">
+            <div class="group-container group-image">
+                <label class="group-container__label group-image__label" for="image">Imagen</label>
+                <input class="group-container__input group-image__input" id="image" name="image" type="text" />
+            </div>
+            <div class="group-container group-image__category">
+                <label class="group-container__label group-image__category__label" for="categoria">Categoría</label>
+                <input class="group-container__input group-image__category__input" id="category" name="categoria" type="text" />
+            </div>
+        </div>
+        <div class="form-container__group form-container__group--short">
+            <div class="group-container group-container--short">
+                <label class="group-container__label--short" for="edadmin">Edad desde</label>
+                <input class="group-container__input--short" id="minAge" name="edadmin" type="number" />
+            </div>
+            <div class="group-container group-container--short">
+                <label class="group-container__label--short" for="edadmax">Edad hasta</label>
+                <input class="group-container__input--short" id="maxAge" name="edadmax" type="number" />
+            </div>
+        </div>
+        <div class="form-container__group" id="group-checkbox">
+            <div class="group-container">
+                <label class="group-container__label" for="ship">Envio sin cargo</label>
+                <input class="group-container__input" type="checkbox" name="ship" id="ship">
+            </div>
+        </div>
+        <div class="group-container">
+            <label class="group-container__label group-container__label--left" for="descripccioncorta">Descripción
+                corta</label>
+            <textarea class="group-container__textarea group-container__textarea--alta" name="descripccioncorta"
+                id="shortDescription" cols="30" rows="10"></textarea>
+        </div>
+        <div class="group-container">
+            <label class="group-container__label group-container__label--left" for="descripccionlarga">Descripción
+                larga</label>
+            <textarea class="group-container__textarea group-container__textarea--alta" name="descripccionlarga"
+                id="longDescription" cols="30" rows="10"></textarea>
+        </div>
+        <p class="form-container__optional"><span class="form-container__optional-span">*</span> Campo opcional.</p>
+        <button class="button button--delete" type="button" disabled>Cancelar</button>
+        <button class="button button--modify" type="button" disabled>Modificar</button>
+        <button type="submit" class="button button--float-right">Dar de alta</button>
+    </form>
+</div>
+
+   </main> 

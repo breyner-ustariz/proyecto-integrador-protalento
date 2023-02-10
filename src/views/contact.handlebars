@@ -1,0 +1,92 @@
+
+   <main class="main">
+      <div class="main__form-container">
+         
+            <form class="main__form-container__form" action="" id="form">
+            
+               <h2>Contacto</h2>
+   
+               <!-- group name  -->
+               <div class="main__form-container__form__group" id="group__name">
+                  <label for="name">Nombre:</label>
+                  <div class="main__form-container__form__groupname">
+                     <input name="name" class="form-input" id="name" type="text" placeholder="Nombre" >
+                     <i class="validate-state fa-solid fa-circle-xmark"></i>
+                  </div>
+                  <p class="main__form-container__form__group__error error"> mínimo 4 letras</p>
+               </div>
+   
+               <!-- group email -->
+               <div class="main__form-container__form__group" id="group__email">
+                  <label for="email">Correo:</label>
+                  <div>
+                     <input name="email" class="form-input" id="email" type="email" placeholder="correo@mail.com">
+                     <i class="validate-state fa-solid fa-circle-xmark"></i>
+                  </div>
+                  <p class="main__form-container__form__group__error error">
+                     solo debe contener letras, números, guiones y guion bajo.
+                  </p>
+               </div>
+   
+               <!-- group phone -->
+               <div class="main__form-container__form__group" id="group__phone">
+                  <label for="phone">Telefono:</label>
+                  <div>
+                     <input name="phone" class="form-input" id="phone" type="number" placeholder="300+++++++">
+                     <i class="validate-state fa-solid fa-circle-xmark"></i>
+                  </div>
+                  <p class="main__form-container__form__group__error error">
+                     solo debe contener letras, números, guiones y guion bajo.
+                  </p>
+               </div>
+   
+   
+               <!-- group asunto -->
+               <div class="main__form-container__form__group" id="group__affair">
+                  <label  for="asunto">Asunto:</label>
+                  <div>
+                     <input name="asunto" id="asunto" type="text" placeholder="Asunto"  class="form-input">
+                     <i class="validate-state fa-solid fa-circle-xmark"></i>
+                  </div>
+                  <p class="main__form-container__form__group__error error">El nombre debe ser mínimo de 4 letras y solo debe contener letras</p>
+               </div>
+   
+               <!-- group message -->
+               <div class="main__form-container__form__group-textarea" id="group__message">
+                  <label for="mensaje">Mensaje:</label>
+                  <div>
+                     <textarea name="message" id="mensaje" placeholder="Comentario" class="form-input" ></textarea>
+                     <i class="validate-state fa-solid fa-circle-xmark"></i>
+                  </div>
+                  <p>
+                     Este campo no puede enviarse vació.
+                  </p>
+               </div>
+   
+               <!-- group terms and conditions -->
+               <div class="main__form-container__form__group-input-terms">
+                  <label class="main__form-container__form__label">
+                     <input type="checkbox" name="terms" id="terms">
+                     Acepto los términos y condiciones
+                  </label>
+               </div>
+   
+               <div class="main__form-container__form__errorMessage" id="errorMessage">
+                  <p  id="form_error"><i class="fa-solid fa-triangle-exclamation"></i>
+                  <b>Error:</b> llene el formulario correctamente</p>
+               </div>
+   
+               <div class="main__form-container__form__div-button">
+                  <button type="submit">Enviar</button>
+                  <p  id="exitos">Formulario enviado exitosamente</p>
+               </div>
+            </form>
+         
+         <div class="main__form-container__image-container">
+            <img src="public/img/logo-jugueteria.png" alt="logo jugueteria cosmica">
+         </div>
+      </div>
+      <script src='js/main.js'></script>
+   </main> 
+   
+   

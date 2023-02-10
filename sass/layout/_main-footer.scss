@@ -1,0 +1,84 @@
+.main-footer {
+   color: white;
+   background-color: var(--bluedark-color);
+   height: 15%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 1em;
+
+   & div:first-child {
+      text-align: center;
+      margin-top: 1.5em;
+      width: 50%;
+
+      & p {
+         font-size: 1.3em;
+      }
+      & input {
+         height: 41px;
+         width: 70%;
+         &:focus {
+            padding: 5px;
+            outline: none;
+            border: 2px solid var(--cyan-color);
+         }
+      }
+      & button {
+         margin-left: -4px;
+         margin-top: 10px;
+         height: 40px;
+         width: 20%;
+         background-color: var( --cyan-color);
+         border: transparent;
+         color: var(--bluedark-color);
+         
+         font-weight: bold;
+         cursor: pointer;
+      }
+   }
+
+
+   &__social-network {
+      margin-top: 1em;
+      text-align: center;
+      color: white;
+
+      & ul li {
+         padding-top: .5em;
+      }
+      & ul li a {
+         color: white;
+         font-size: 2em;
+
+         &:hover {
+            color: rgb(151, 151, 151);
+         }
+         
+      }
+   }
+   &  ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      color: white;
+      list-style-type: none;
+      margin-bottom: .1em;
+
+      @media (max-width: 768px){
+
+      }
+   }
+
+   &__listFooter > li a{
+      color: white;
+      
+   }
+
+   &__listCreador {
+      margin-top: .5em;
+      padding-bottom: .5em;
+   }
+}

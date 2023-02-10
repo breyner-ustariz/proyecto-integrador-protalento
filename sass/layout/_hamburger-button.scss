@@ -1,0 +1,65 @@
+.hamburger-button {
+   display: block;
+   width: 30px;
+   height: 50px;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+
+   
+   
+
+   &__top-bread {
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: .5em;
+      background-color: #1a1a1a;
+      left: 10%;
+      top: 20%;
+      border-radius: 10px;
+   }
+   &__meat {
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: .5em;
+      background-color: #1a1a1a;
+      transform: translateY(-50%);
+      left: 10%;
+      top: 50%;
+      border-radius: 10px;
+   }
+   &__bottom-bread {
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: .5em;
+      background-color: #1a1a1a;
+      left: 10%;
+      bottom: 20%;
+      border-radius: 10px;
+   }
+   &:hover span  {
+      background-color: #4d4d4d;
+   }
+
+}
+
+.main-nav-toggle:checked ~ .main-header .hamburger-button {
+   background-color: orange;
+   &:hover{
+      background-color: orangered;
+   }
+}
+.br-1 {
+   transform: rotate(-45deg) translate(-10px, 7px);
+   height: .3em;
+}
+.br-2 {
+   opacity: 0;
+}
+.br-3 {
+   transform: rotate(45deg) translate(-10px, -8px);
+   height: .3em;
+}

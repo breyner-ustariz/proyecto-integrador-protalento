@@ -1,0 +1,88 @@
+  
+<main class="main">
+   
+   <section class="section__cards">
+      
+      <div class="cards-container">
+
+         <div class="card">
+            <article class="card__article">
+               
+               <div class="card__content">
+                  <h2 class="card__heading">0 a 24 meses</h2>
+                  
+               </div>
+            </article>
+         </div>
+
+         <div class="card">
+            <article class="card__article">
+               
+               <div class="card__content">
+                  <h2 class="card__heading">2 a 4 años</h2>
+               </div>
+            </article>
+         </div>
+
+         <div class="card">
+            <article class="card__article">
+               
+               <div class="card__content">
+                  <h2 class="card__heading">4 a 6 años</h2></p>
+               </div>
+            </article>
+         </div>
+
+         <div class="card">
+            <article class="card__article">
+               
+               <div class="card__content">
+                  <h2 class="card__heading">6 a 8 años</h2>
+               </div>
+            </article>
+         </div>
+
+         <div class="card">
+            <article class="card__article">
+               
+               <div class="card__content">
+                  <h2 class="card__heading">8 a 11 años</h2></p>
+               </div>
+            </article>
+         </div>
+
+         <div class="card">
+            <article class="card__article">
+               
+               <div class="card__content">
+                  <h2 class="card__heading">11+</h2>
+               </div>
+            </article>
+         </div>
+
+                     
+      </div>
+      
+      <div class="the-new">
+         <h2>Lo Mas Vendido</h2>
+         
+         <div class="the-new__cards-container">
+         {{#each productos}}
+            <div class="the-new__cards-container__card">
+               <div class="the-new__cards-container__card__addCart buttonAddCart">
+                  <p>+</p>
+               </div>
+               <h3>{{name}}</h3>
+               <div class="the-new__cards-container__card__img-container">
+                  <img src="img/juguete-1.png" alt="">
+               </div>
+               <article>
+                  <p>ENVIO GRATIS</p>
+                  <p>{{description_corta}}<br>
+                     <span>$ {{precio}}</span></p>
+               </article>
+            </div>
+                     
+         {{/each}}
+   </section>
+</main> 

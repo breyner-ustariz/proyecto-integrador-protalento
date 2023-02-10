@@ -1,0 +1,24 @@
+{
+  "name": "jugueteria-cosmica",
+  "version": "1.0.0",
+  "description": "proyecto integrador protalento 2022",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --no-source-map --watch sass/main.scss public/css/main.css",
+    "nodemon-watch": "nodemon index.js -e *",
+    "dev": "npm-run-all --parallel sass-watch nodemon-watch"
+  },
+  "author": "Breyner Ustariz",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "mongoose": "^6.9.1",
+    "nanoid": "^4.0.1"
+  }
+}
