@@ -53,17 +53,26 @@
 
          &__addCart { 
             display: none;           
-            background-color: #18bdbd;
+            background-color: #187bbd;
             width: 50px;
             height: 50px;
             color: #fff;
             font-size: 3.2rem;
             border-radius: 50%;
             position: relative;
-            & p {
+            & .formAdd  {
                position: absolute;
-               left: 20%;
-               top: -10%;
+               left: -px;
+               top: -17px;
+               & .buttonAdd {
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  background-color: #187bbd;
+                  border: 2px solid white;
+                  color: white;
+               }
             }
          }
          &:hover {

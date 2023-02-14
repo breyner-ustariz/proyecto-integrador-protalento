@@ -796,7 +796,7 @@ body {
 }
 .the-new__cards-container__card__addCart {
   display: none;
-  background-color: #18bdbd;
+  background-color: #187bbd;
   width: 50px;
   height: 50px;
   color: #fff;
@@ -804,10 +804,19 @@ body {
   border-radius: 50%;
   position: relative;
 }
-.the-new__cards-container__card__addCart p {
+.the-new__cards-container__card__addCart .formAdd {
   position: absolute;
-  left: 20%;
-  top: -10%;
+  left: -px;
+  top: -17px;
+}
+.the-new__cards-container__card__addCart .formAdd .buttonAdd {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #187bbd;
+  border: 2px solid white;
+  color: white;
 }
 .the-new__cards-container__card:hover {
   transition: all 450ms;
@@ -1140,4 +1149,4 @@ body {
   gap: 1em;
   justify-content: center;
   align-items: stretch;
-}
+}/*# sourceMappingURL=main.css.map */

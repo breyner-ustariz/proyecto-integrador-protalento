@@ -2,7 +2,7 @@
 
    <main class="main" id="main">
       <div class="form-container">
-    <form class="form-container__form" autocomplete="off" method="post" action="/alta">
+    <form action="/alta" class="form-container__form" autocomplete="off" method="post" enctype="multipart/form-data">
         <h2 class="form-container__title">Alta producto</h2>
         <div class="form-container__separator"></div>
         <div class="form-container__group">
@@ -35,7 +35,7 @@
         <div class="form-container__group group-image">
             <div class="group-container group-image">
                 <label class="group-container__label group-image__label" for="image">Imagen</label>
-                <input class="group-container__input group-image__input" id="image" name="image" type="text" />
+                <input class="group-container__input group-image__input" id="image" name="image" type="file" accept="image/*" />
             </div>
             <div class="group-container group-image__category">
                 <label class="group-container__label group-image__category__label" for="categoria">Categoría</label>

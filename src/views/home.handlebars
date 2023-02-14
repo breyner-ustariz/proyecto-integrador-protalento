@@ -69,8 +69,13 @@
          <div class="the-new__cards-container">
          {{#each productos}}
             <div class="the-new__cards-container__card">
+               
                <div class="the-new__cards-container__card__addCart buttonAddCart">
-                  <p>+</p>
+                  <form action="/home" class="formAdd" onsubmit="return"  method="post">
+                  <input type="hidden" name="idproduct" value="{{_id}}">
+                     <button type="submit" class="buttonAdd"
+                     >+</button>
+                  </form>
                </div>
                <h3>{{name}}</h3>
                <div class="the-new__cards-container__card__img-container">
