@@ -1,5 +1,6 @@
 
 .card {
+   
    width: 10em;
    height: 10em;
    border-radius: 50% 50% 30% 50%;
@@ -29,6 +30,7 @@
    transform-origin: bottom;
    background-color: orange;
 }
+
 &:nth-child(8n+1){
    background-color: var(--purple-color);
    color: white;

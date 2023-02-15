@@ -1,12 +1,35 @@
 .the-new {
+   & h3 {
+      font-size: 1.2rem;
+   }
+   & p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+   }
+   & .formDelete {
+      display: none;
+      & button {
+         background-color: red;
+         padding: 5px;
+         border-radius: 5px;
+         border: none;
+         color: white;
+         margin-top: -10px;
+      }
+   }
    background-color: white;
    margin-top: 1em;
    text-align: left;
    padding: 2em;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
    
 
    &__cards-container {
+      & :hover .formDelete{
+      
+         display: block;
+         
+      }
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
@@ -15,7 +38,7 @@
 
       & article p:first-child {
          position: absolute;
-         font-size: .8em;
+         font-size: .5em;
          padding: .2em;
          margin-top: -1em;
          display: inline-block;
@@ -24,7 +47,7 @@
 
       }
       & article p:nth-child(2) {
-         font-size: .8em;
+         font-size: .7em;
          margin-top: 1em;
          padding-top: 1em;
          display: block;

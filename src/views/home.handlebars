@@ -51,20 +51,12 @@
             </article>
          </div>
 
-         <div class="card">
-            <article class="card__article">
-               
-               <div class="card__content">
-                  <h2 class="card__heading">11+</h2>
-               </div>
-            </article>
-         </div>
 
                      
       </div>
       
       <div class="the-new">
-         <h2>Lo Mas Vendido</h2>
+         
          
          <div class="the-new__cards-container">
          {{#each productos}}
@@ -79,13 +71,16 @@
                </div>
                <h3>{{name}}</h3>
                <div class="the-new__cards-container__card__img-container">
-                  <img src="img/juguete-1.png" alt="">
+                  <img src="{{image}}" alt="{{cloudinary_id}}">
                </div>
                <article>
                   <p>ENVIO GRATIS</p>
                   <p>{{description_corta}}<br>
                      <span>$ {{precio}}</span></p>
                </article>
+               <form action="/{{_id}}?_method=DELETE" method="post" enctype="multipart/form-data" class="formDelete">
+                  <button type="submit">Eliminar</button>
+               </form>
             </div>
                      
          {{/each}}

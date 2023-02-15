@@ -751,7 +751,25 @@ body {
   margin-top: 1em;
   text-align: left;
   padding: 2em;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+.the-new h3 {
+  font-size: 1.2rem;
+}
+.the-new p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.the-new .formDelete {
+  display: none;
+}
+.the-new .formDelete button {
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-top: -10px;
 }
 .the-new__cards-container {
   display: flex;
@@ -760,9 +778,12 @@ body {
   justify-content: space-around;
   position: relative;
 }
+.the-new__cards-container :hover .formDelete {
+  display: block;
+}
 .the-new__cards-container article p:first-child {
   position: absolute;
-  font-size: 0.8em;
+  font-size: 0.5em;
   padding: 0.2em;
   margin-top: -1em;
   display: inline-block;
@@ -770,7 +791,7 @@ body {
   color: white;
 }
 .the-new__cards-container article p:nth-child(2) {
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-top: 1em;
   padding-top: 1em;
   display: block;
@@ -1080,16 +1101,6 @@ body {
   display: inline-block;
   margin-top: -15px;
   margin-left: 130px;
-}
-
-.group-stock {
-  display: block;
-  margin: 0 auto;
-}
-.group-stock__input {
-  margin-left: 30px;
-  width: 30%;
-  display: inline;
 }
 
 .group-image {

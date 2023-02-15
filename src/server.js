@@ -41,12 +41,13 @@ app.use(express.static(path.join(__dirname, '../public')))
 const routes = require('./routes/index.routes')
 app.use(routes);
 
-const cloudinary = require('./utils/cloudinary');
-const multer = require('./utils/multer')
+const cloud = require('./utils/cloudinary');
+const upload = require('./utils/multer')
 const juguetes = require('./models/product');
-app.post('/alta', multer.single("image"), async (req, res) => {
+
+app.post('/alta', upload.single("image"), async (req, res) => {
    const {
-      id,
+      
       nombre,
       marca,
       precio,
@@ -58,16 +59,17 @@ app.post('/alta', multer.single("image"), async (req, res) => {
       descripccioncorta,
       descripccionlarga,
    } = req.body;
-   console.log(req.body);
    try {
-      const cloud = cloudinary.uploader.upload(req.file.path);
+      const cloudimg = await cloud.uploader.upload(req.file.path);
+
       const juguete = new juguetes({
-         id: id,
+         
          name: nombre,
          marca: marca,
          precio: precio,
          stock: stock,
-         img: cloud.secure_url,
+         image: cloudimg.secure_url,
+         cloudinary_id: cloudimg.public_id,
          categoria: categoria,
          edad_desde: edadmin,
          edad_hasta: edadmax,
@@ -81,7 +83,16 @@ app.post('/alta', multer.single("image"), async (req, res) => {
    }
 });
 
-
+app.delete('/:id', async (req, res)=>{
+   try {
+      let product = await juguetes.findById(req.params.id)
+      await cloud.uploader.destroy(product.cloudinary_id)
+      product.remove();
+      res.redirect('/')
+   } catch (error) {
+      console.log('algo esta fallando en la ruta delete : ', error);
+   }
+})
 const port = process.env.PORT || 3000
 app.listen(port, ()=>{
    console.log('servidor iniciado en puerto: ', port);
