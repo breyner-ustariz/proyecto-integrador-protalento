@@ -4,6 +4,8 @@
   "description": "proyecto integrador protalento 2022",
   "main": "index.js",
   "scripts": {
+   
+   "start": "node src/app.js",
     "sass-watch": "sass --no-source-map --watch sass/main.scss public/css/main.css",
     "nodemon-watch": "nodemon index.js -e *",
     "dev": "npm-run-all --parallel sass-watch nodemon-watch"

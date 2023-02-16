@@ -1,6 +1,7 @@
 
 .card {
    
+   
    width: 10em;
    height: 10em;
    border-radius: 50% 50% 30% 50%;
@@ -24,59 +25,6 @@
       border-radius:  inherit;
       text-align: center;
    }
-
-&:hover {
-   transform: scale(1.03);
-   transform-origin: bottom;
-   background-color: orange;
-}
-
-&:nth-child(8n+1){
-   background-color: var(--purple-color);
-   color: white;
-   
-   
-}
-&:nth-child(8n+2){
-   background-color: var(--green-color);
-   color: white;
-   & > article > .card__image-container {
-      background-color: #b95cfc;
-         }
-
-      
-   
-}
-&:nth-child(8n+3){
-   background-color: var(--rosa-color);
-   color: white;
-   & > article > .card__image-container {
-      background-color: #02f7ff;
-   }
-   
-}
-&:nth-child(8n+4){
-   background-color: var( --blue-color);
-   color: white;
-   & > article > .card__image-container {
-      background-color: #6363E0;
-   }
-}
-&:nth-child(8n+5){
-   background-color: var(--yellowDark-color);
-   color: white;
-   & > article > .card__image-container {
-      background-color: #4bb452;
-   }
-}
-&:nth-child(8n+6){
-   background-color: var(--red-color);
-   color: white;
-   & > article > .card__image-container {
-      background-color: #FF63BB;
-   }
-}
-
 
 
 &__article {
@@ -108,4 +56,69 @@
    height: 100%;
    object-fit: cover;
 }
+}
+.enlace {
+
+   width: 10em;
+   height: 10em;
+   border-radius: 50% 50% 30% 50%;
+   border: 1px white solid;
+   box-shadow:
+      1px 3px 5px rgba(0, 0, 0, .2), 0 0 8px rgba(0, 0, 0, .05);
+   transition: all .2s;
+   cursor: pointer;
+   z-index: 100000;
+   text-decoration: none;
+   color: white;
+
+   &:nth-child(5n+1){
+      background-color: var(--purple-color);
+      
+   }
+   &:nth-child(5n+2){
+      background-color: var(--green-color);
+      &:hover {
+         transform: scale(1.03);
+         transform-origin: bottom;
+         background-color: #0f5b14;
+         
+      }
+   }
+   &:nth-child(5n+3){
+      background-color: var(--yellowDark-color);
+      &:hover {
+         transform: scale(1.03);
+         transform-origin: bottom;
+         background-color: #d2a510;
+         
+      }
+   }
+   &:nth-child(5n+1){
+      background-color: var(--rosa-color);
+      &:hover {
+         transform: scale(1.03);
+         transform-origin: bottom;
+         background-color: #a22d70;
+         
+      }
+   }
+   &:nth-child(5n+4){
+      background-color: var( --blue-color);
+      &:hover {
+         transform: scale(1.03);
+         transform-origin: bottom;
+         background-color: #2dabb7;
+         
+      }
+   }
+   &:nth-child(5n+5){
+      background-color: rgb(254, 50, 50);
+      &:hover {
+         transform: scale(1.03);
+         transform-origin: bottom;
+         background-color: rgb(206, 43, 43);
+         
+      }
+   }
+
 }

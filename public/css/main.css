@@ -668,50 +668,6 @@ body {
   border-radius: inherit;
   text-align: center;
 }
-.card:hover {
-  transform: scale(1.03);
-  transform-origin: bottom;
-  background-color: orange;
-}
-.card:nth-child(8n+1) {
-  background-color: var(--purple-color);
-  color: white;
-}
-.card:nth-child(8n+2) {
-  background-color: var(--green-color);
-  color: white;
-}
-.card:nth-child(8n+2) > article > .card__image-container {
-  background-color: #b95cfc;
-}
-.card:nth-child(8n+3) {
-  background-color: var(--rosa-color);
-  color: white;
-}
-.card:nth-child(8n+3) > article > .card__image-container {
-  background-color: #02f7ff;
-}
-.card:nth-child(8n+4) {
-  background-color: var(--blue-color);
-  color: white;
-}
-.card:nth-child(8n+4) > article > .card__image-container {
-  background-color: #6363E0;
-}
-.card:nth-child(8n+5) {
-  background-color: var(--yellowDark-color);
-  color: white;
-}
-.card:nth-child(8n+5) > article > .card__image-container {
-  background-color: #4bb452;
-}
-.card:nth-child(8n+6) {
-  background-color: var(--red-color);
-  color: white;
-}
-.card:nth-child(8n+6) > article > .card__image-container {
-  background-color: #FF63BB;
-}
 .card__article {
   display: flex;
   flex-direction: column;
@@ -744,6 +700,62 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.enlace {
+  width: 10em;
+  height: 10em;
+  border-radius: 50% 50% 30% 50%;
+  border: 1px white solid;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+  cursor: pointer;
+  z-index: 100000;
+  text-decoration: none;
+  color: white;
+}
+.enlace:nth-child(5n+1) {
+  background-color: var(--purple-color);
+}
+.enlace:nth-child(5n+2) {
+  background-color: var(--green-color);
+}
+.enlace:nth-child(5n+2):hover {
+  transform: scale(1.03);
+  transform-origin: bottom;
+  background-color: #0f5b14;
+}
+.enlace:nth-child(5n+3) {
+  background-color: var(--yellowDark-color);
+}
+.enlace:nth-child(5n+3):hover {
+  transform: scale(1.03);
+  transform-origin: bottom;
+  background-color: #d2a510;
+}
+.enlace:nth-child(5n+1) {
+  background-color: var(--rosa-color);
+}
+.enlace:nth-child(5n+1):hover {
+  transform: scale(1.03);
+  transform-origin: bottom;
+  background-color: #a22d70;
+}
+.enlace:nth-child(5n+4) {
+  background-color: var(--blue-color);
+}
+.enlace:nth-child(5n+4):hover {
+  transform: scale(1.03);
+  transform-origin: bottom;
+  background-color: #2dabb7;
+}
+.enlace:nth-child(5n+5) {
+  background-color: rgb(254, 50, 50);
+}
+.enlace:nth-child(5n+5):hover {
+  transform: scale(1.03);
+  transform-origin: bottom;
+  background-color: rgb(206, 43, 43);
 }
 
 .the-new {
