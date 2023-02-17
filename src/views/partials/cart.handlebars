@@ -1,13 +1,26 @@
 <div class="cart" id="productCart">
-   <h1>seccion carrito de compras{{name}}</h1>
-</div>
-<style>
-   .cart {
-      width: 100%;
-      height: 200px;
-      background-color: rgb(196, 141, 247);
-      padding: 2em;
-      z-index: 99900;
+   <div class="titulo">
+      <h3>Carrito</h3>
+   </div>
+   <h1 class="closeCart">x</h1>
+   <div class="cartproducts">
+      {{#each cartsproduct}}
+      <div class="product">
+         <div class="cartimg">
 
-   }
-</style>
+            <img src="{{img}}" alt="{{name}}">
+         </div>
+         <div class="informacion">
+            <h4>{{name}}</h4>
+            <h5>{{precio}}</h5>
+            <h5>{{cantidad}}</h5>
+         </div>
+         <div>
+            <form action="/{{_id}}?_method=DELETE" method="post" enctype="multipart/form-data" class="formDelete">
+               <input type="submit" value="Eliminar">
+            </form>
+         </div>
+      </div>
+      {{/each}}
+   </div>
+</div>

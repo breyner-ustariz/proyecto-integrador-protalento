@@ -9,6 +9,7 @@ const busquedas = require('../controller/controller.busquedas')
 
 router.get('/', controller.index);
 router.get('/home', homecontroller.home);
+router.post('/home', controller.idproduct);
 router.get('/alta', alta.alta);
 router.get('/contact', contact.contact)
 router.get('/about', aboutcontroller.about)

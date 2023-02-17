@@ -21,9 +21,9 @@
          
 
       </div>
-      {{!-- <div class="main-header__cart-button-container">
-         <i class="fa-solid fa-cart-shopping main-header__cart-button-container__cart-icon"></i>
-      </div> --}}
+      <div class="main-header__cart-button-container">
+         <i class="fa-solid fa-cart-shopping main-header__cart-button-container__cart-icon carticon" ></i>
+      </div>
       <div id="button-hamburger" class="main-header__hamburger-button-container">
          <label class="hamburger-button" for="main-nav-toggle">
             <span id="br1" class="hamburger-button__top-bread"></span>
@@ -33,7 +33,7 @@
       </div>
       <div id="nav" class="main-header__main-nav-container">
          <nav id="nav" class="main-nav">
-            <ul class="main-nav__list">
+            <ul class="main-nav__list ul">
                <li class="main-nav__item">
                   <a href="/home" class="main-nav__link navigation">
                      Inicio
@@ -61,7 +61,7 @@
    </header>
 
    <div class="modal-kart">
-      {{!-- {{> cart}}  --}}
+      {{> cart}} 
    </div>
 
    <main id="main-content">
@@ -98,6 +98,7 @@
 
 
    <script src='js/main.js'></script>
+   <script src='js/cart.js'></script>
    {{!-- <script src='js/cart.js'></script> --}}
 </body>
 </html>

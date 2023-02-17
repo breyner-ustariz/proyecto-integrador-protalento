@@ -12,6 +12,9 @@ const ProductcartSchema = new  mongoose.Schema({
    img: {
       type: String,
       require: true
+   },
+   clouinary_id: {
+      type: String
    }, 
    cantidad: {
       type: Number

@@ -3,9 +3,11 @@
    
    <section class="section__cards">
       
-      <div class="cards-container">
+      <div class="container-containercars">
+         <div class="cards-container">
 
-         <a href="/dos" class="enlace"><div class="card">
+         <a href="/dos" class="enlace">
+         <div class="card">
             <article class="card__article">
                
                <div class="card__content">
@@ -63,6 +65,7 @@
 
                      
       </div>
+      </div>
       
       <div class="the-new">
          
@@ -87,9 +90,7 @@
                   <p>{{description_corta}}<br>
                      <span>$ {{precio}}</span></p>
                </article>
-               <form action="/{{_id}}?_method=DELETE" method="post" enctype="multipart/form-data" class="formDelete">
-                  <button type="submit">Eliminar</button>
-               </form>
+               
             </div>
                      
          {{/each}}
